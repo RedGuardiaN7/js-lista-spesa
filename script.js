@@ -26,3 +26,15 @@ while (i < shopping_list.length) {
     document.getElementById("shopping_list").innerHTML += "<li>" + shopping_list[i] + "</li>";
     i++;
 };
+
+//Funzione che permette di agggiungere elementi alla lista della spesa
+
+function AddItem() {
+
+    //Leggo l'input dell'utente, trasformandolo in variabile
+    let new_item = document.getElementById("InputItem").value;
+    //Stampo in console l'elemento che l'utente vuole aggiungere
+    console.log("L'elemento da lei aggiunto è: " + new_item);
+    //Aggiungo l'elemento nella lista
+    document.getElementById("shopping_list").innerHTML += "<li>" + new_item + "</li>";
+};
