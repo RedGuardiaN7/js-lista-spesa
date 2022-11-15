@@ -20,7 +20,9 @@ let i = 0;
 
 while (i < shopping_list.length) {
 
+    //Stampo nella console    
     console.log(shopping_list[i]);
-
+    //Stampo nell'elenco puntato dell'HTML
+    document.getElementById("shopping_list").innerHTML += "<li>" + shopping_list[i] + "</li>";
     i++;
 };
